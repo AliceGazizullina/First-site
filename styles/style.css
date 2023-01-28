@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
+
+body{
+    font-family: 'League Spartan', sans-serif;
+    background: rgb(2,0,36);
+    background: linear-gradient(230deg, rgba(2,0,36,1) 4%, rgba(242,29,216,1) 36%, rgba(214,0,255,1) 100%)no-repeat
+    /* без повторений */;
+}
+
+
+.header{
+max-width: 998px;
+margin: 0 auto;
+display: flex; /* показывает все элементы в ряд */
+justify-content: space-between; /* все элементы от края до края */
+align-items: center; /* все элементы по центру */
+padding-top: 40px;
+}
+
+.header__logo{
+    display: block;/* Элемент показывается как блочный. Применение этого значения для встроенных элементов, например тега <span>,
+    заставляет его вести подобно блокам — происходит перенос строк в начале и в конце содержимого. */
+    width: 132.98px;
+    height: 38.84px;
+    background-image: url(../images/logo.svg);
+    background-repeat: no-repeat; /* без повторений */
+}
+
+.form{
+    position: relative;/* Положение элемента устанавливается относительно его исходного места. Добавление свойств left, top, right и bottom
+    изменяет позицию элемента и сдвигает его в ту или иную сторону от первоначального расположения. */
+}
+
+.form__button{
+    display: block; /* показывает элементы вертикально */
+    background-image: url(../images/search.svg);
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat; /* без повторений */
+    background-color: transparent; /*прозрачный цвет*/
+    border: none;
+    position: absolute;
+    top: calc(50% - 10px);/* чтобы выбрать центральную точку в блоке "поиск" */
+    left: 10px;
+}
+
+.form__input{
+    width: 248px;
+    background: rgba(4, 0, 187, 0.29);
+    mix-blend-mode: normal; /* прозрачность */
+    border-radius: 20px;
+    border: none;
+    padding: 10px 52px;
+    color: #fff;
+}
+
+.form__input::placeholder{
+    color: #fff
+}
+.form__input:focus{
+    outline: none;
+}
+
+.header__list{
+    display: flex; /* показывает все элементы в ряд */
+    list-style-type: none; /* убрать точки у ссылок */
+    gap: 29px; /* расстояние между ссылками */
+}
+
+.header__link{
+    color: #fff;
+    text-decoration: none; /* убрать нижниб линию у ссылок */
+}
+
+.header__link__gradient{
+background: rgb(11,0,36);
+background: linear-gradient(167deg, rgba(11,0,36,1) 10%, rgba(141,16,32,1) 47%, rgba(242,29,29,1) 65%);
+mix-blend-mode: normal;
+padding: 10px 16px;
+border-radius: 50px;
+}
