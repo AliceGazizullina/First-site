@@ -3,9 +3,10 @@
 
 body{
     font-family: 'League Spartan', sans-serif;
-    background: rgb(2,0,36);
-    background: linear-gradient(230deg, rgba(2,0,36,1) 4%, rgba(242,29,216,1) 36%, rgba(214,0,255,1) 100%)no-repeat
+    background: rgb(65,13,132);
+    background: linear-gradient(315deg, rgba(65,13,132,1) 14%, rgba(110,15,191,1) 42%, rgba(221,9,187,1) 75%)no-repeat
     /* без повторений */;
+    color: #fff;
 }
 
 
@@ -15,7 +16,7 @@ margin: 0 auto;
 display: flex; /* показывает все элементы в ряд */
 justify-content: space-between; /* все элементы от края до края */
 align-items: center; /* все элементы по центру */
-padding-top: 40px;
+padding: 40px 15px 103px 15px ;
 }
 
 .header__logo{
@@ -25,6 +26,7 @@ padding-top: 40px;
     height: 38.84px;
     background-image: url(../images/logo.svg);
     background-repeat: no-repeat; /* без повторений */
+    /* margin-right: -35px; */
 }
 
 .form{
@@ -47,7 +49,7 @@ padding-top: 40px;
 
 .form__input{
     width: 248px;
-    background: rgba(4, 0, 187, 0.29);
+    background: rgba(8, 7, 80, 0.29);
     mix-blend-mode: normal; /* прозрачность */
     border-radius: 20px;
     border: none;
@@ -74,9 +76,133 @@ padding-top: 40px;
 }
 
 .header__link__gradient{
-background: rgb(11,0,36);
-background: linear-gradient(167deg, rgba(11,0,36,1) 10%, rgba(141,16,32,1) 47%, rgba(242,29,29,1) 65%);
-mix-blend-mode: normal;
-padding: 10px 16px;
-border-radius: 50px;
+    background: rgb(167,30,47);
+    background: linear-gradient(167deg, rgba(167,30,47,1) 30%, rgba(242,29,29,1) 75%);
+    mix-blend-mode: normal;
+    padding: 10px 16px;
+    border-radius: 50px;
+}
+
+.container{
+    max-width: 998px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.main{
+    display: flex; /* показывает все элементы в ряд */
+    justify-content: space-between; /* все элементы от края до края */
+    align-items: center;
+}
+
+.main__title{
+    font-size: 48px;
+    line-height: 44px;
+    font-weight: lighter;
+    width: 287px;
+}
+
+.main__description{
+    font-size: 32px;
+    line-height: 29px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.51);
+    width: 284px;
+}
+
+.main__btn__gradient{
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 8px 20px;
+    background: rgb(167,30,47);
+    background: linear-gradient(167deg, rgba(167,30,47,1) 30%, rgba(242,29,29,1) 75%);
+}
+
+.main__list{
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    gap: 33px;
+}
+
+.main__span{
+    display: block;
+    text-align: center;
+    line-height: 29px;
+    font-weight: lighter;
+}
+
+.main__img{
+    width: 100%;
+}
+
+.main__image{
+    flex-basis: calc(100% - 400px)
+}
+
+.main__text{
+    flex-basis: 400px;
+}
+
+.title{
+    margin-top: 100px;
+    margin-bottom: 0 ;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 44px;
+    text-align: center;
+}
+
+.desc{
+    font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 29px;
+text-align: center;
+color: rgba(255, 255, 255, 0.51);
+margin-top: 30px;
+}
+
+.card{
+    display: flex; /* показывает все элементы в ряд */
+    justify-content: space-between; /* все элементы от края до края */
+    margin-left: 132px;
+    margin-right: 132px;
+   
+}
+
+.card__item{
+    background: rgba(51, 6, 49, 0.87);
+    border-radius: 20px;
+    flex-basis: 32%;
+    box-sizing: border-box;
+}
+
+.card__item2{
+    background: rgba(253, 34, 245, 0.74);
+}
+
+.card__item3{
+    background: rgba(239, 237, 247, 0.66);
+}
+
+.card__caver{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 453px;
+   
+}
+
+.card__img{
+    width: 80%;
+    height: 65%;
+    position: absolute;
+    padding-bottom: 100px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
 }
